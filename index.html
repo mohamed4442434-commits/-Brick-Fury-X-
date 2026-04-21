@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Brick Breaker PRO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎮 Brick Breaker PRO</h1>
+
+<div>
+👤 <input id="playerName" placeholder="اسمك">
+<button onclick="saveName()">حفظ</button>
+</div>
+
+<div class="top-bar">
+👤 <span id="nameDisplay">Player</span> |
+💰 <span id="coins">0</span> |
+⭐ <span id="score">0</span> |
+❤️ <span id="lives">3</span> |
+🧠 <span id="level">1</span>
+</div>
+
+<div class="controls">
+<button onclick="startGame()">▶️</button>
+<button onclick="pauseGame()">⏸️</button>
+<button onclick="toggleMute()">🔇</button>
+</div>
+
+<canvas id="gameCanvas" width="320" height="400"></canvas>
+
+<div id="gameOverBox">
+<h2>💀 GAME OVER</h2>
+<button onclick="startGame()">Restart</button>
+</div>
+
+<h2>🛒 Paddle Shop</h2>
+<div id="paddleShop" class="shop-row"></div>
+
+<h2>⚪ Ball Shop</h2>
+<div id="ballShop" class="shop-row"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

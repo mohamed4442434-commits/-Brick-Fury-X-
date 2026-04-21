@@ -1,0 +1,50 @@
+body{
+background:black;
+color:white;
+text-align:center;
+font-family:Arial;
+}
+
+canvas{
+border:2px solid cyan;
+margin-top:10px;
+}
+
+.controls button{
+margin:5px;
+padding:8px;
+background:orange;
+border:none;
+cursor:pointer;
+}
+
+.shop-row{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+margin:10px;
+}
+
+.skin{
+background:#111;
+border:2px solid cyan;
+padding:10px;
+width:80px;
+}
+
+.skin button{
+width:100%;
+margin-top:5px;
+}
+
+#gameOverBox{
+position:absolute;
+top:40%;
+left:50%;
+transform:translate(-50%,-50%);
+background:#111;
+padding:20px;
+border:2px solid red;
+display:none;
+}
